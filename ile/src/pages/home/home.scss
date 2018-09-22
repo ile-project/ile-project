@@ -1,3 +1,23 @@
-page-home {
-
+page-home{
+    ion-content{
+        background-image: url("../assets/imgs/omagetest.png");
+        background-size: cover;
+    }
+    button{
+        align-self: center;
+        padding-left: 5px;
+    }
+    .item{
+        // background-image: url("../assets/imgs/omagetest.png");
+        background-color:transparent;
+        background-size: cover;
+        margin-bottom: none;
+        align-content: center;
+        padding-top: 50%;
+        border-bottom: none;
+    }
+    .whitebox{
+        border-color: white;
+        text-decoration-color: black;
+    }
 }
