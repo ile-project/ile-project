@@ -1,20 +1,7 @@
-<!--
-  Generated template for the HomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 
 <ion-content class="page">
   <ion-item class="item">
-    <button ion-button active outline block large class="whitebox">Agent?</button>
-    <button ion-button  block large>Student?</button>
+    <button ion-button [navPush]='agentGo' active outline block large class="whitebox">Agent?</button>
+    <button ion-button [navPush]='studentGo'  block large>Student?</button>
   </ion-item>
-<!--<img src="../assets/imgs/background.jpg" alt="back"> -->
-<!-- 
-  <ion-item class="content">
-    <button ion-button active outline block large>Agent?</button>
-    <button ion-button  block large>Student?</button>
-  </ion-item> 
--->
 </ion-content>

@@ -1,0 +1,38 @@
+page-agentsignin{
+ion-title{
+    padding-left: 3em;
+    padding-top: -5em;
+    padding-bottom: 2em;
+}
+    .invalid {
+        border-bottom: 1px solid #ff6153;
+        }
+        .error-message {
+        min-height: 2.2rem;
+        }
+        p {
+        font-size: 60%;
+        }
+        ion-label {
+        margin: 2px 0;
+        }
+        .item-inner {
+        border-bottom: 0 !important;
+        }
+   div{
+       align-content: center;
+       align-self: center;
+       padding-top: 10%;
+   }
+   ion-item{
+       border-bottom: none;
+   }
+   button{
+       float: right;
+       
+   }
+   ion-title{
+       align-content: center;
+       align-self: center
+   }
+}

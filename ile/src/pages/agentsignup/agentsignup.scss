@@ -1,0 +1,53 @@
+page-agentsignup {
+  ion-content{
+       background-image: url("../assets/imgs/91.jpg");
+       background-size: cover;
+  }
+  ion-list{
+      padding-top: 4em;
+      align-content: center;
+
+      // background-color: transparent;
+  }
+  ion-label{
+    // background-color: transparent;
+  }
+  #login{
+    float: right;
+    padding-bottom: 1.2em;
+  }
+  ion-item{
+    border-bottom: none;
+    margin-bottom: none;
+  }
+  a{
+    float:right;
+    padding-left: 3em;
+    margin-bottom: none;
+    border-bottom: none;
+}
+  #anchor{
+    border-bottom: none;
+  }
+  ion-input{
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    text-decoration-color: indigo;
+  }
+  .inline{
+    display:inline;
+    
+  }
+  button{
+    align-self: center;
+    float: right;
+  }
+  div{
+    text-decoration-color: whitesmoke;
+  }
+
+
+
+ 
+}

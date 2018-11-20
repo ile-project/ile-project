@@ -1,0 +1,57 @@
+<!--
+  Generated template for the AgentsigninPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header color="primary">
+ <ion-navbar color="primary">
+    <ion-title id ="title">
+      AGENT SIGN-IN
+    </ion-title> 
+  </ion-navbar>  
+</ion-header> -->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title color="transparent">
+      AGENT SIGN-IN
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+ <form [formGroup]= "loginForm" (submit)= "loginUser">
+   <ion-item>
+     <ion-label stacked>Email</ion-label>
+     <ion-input id ="usName" formControlName="email" type ="email" 
+     placeholder="Enter a valid email address"
+     [class.invalid]= "!loginForm.controls.email.valid && loginForm.controls.email.touched"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" 
+    *ngIf="!loginForm.controls.email.valid && loginForm.controls.email.touched">
+      <p>PLease enter a valid email adress</p>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input id="psw" formControlName="password" type="password"
+      placeholder="Input your password" 
+      [class.invalid]="!loginForm.controls.password.touched"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" 
+    *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.touched">
+      <p>Please enter a valid email adress</p>
+    </ion-item>
+    <button ion-button block type="submit" [disabled]="!loginForm.valid" (click)="dash()">
+        Log In
+    </button>
+ </form>
+  <button ion-button block clear [navPush]="goToSignup">
+      Create a new account
+  </button>
+   <button ion-button block clear [navPush]="newPsw">
+    Forgot password?
+   </button>
+
+</ion-content>

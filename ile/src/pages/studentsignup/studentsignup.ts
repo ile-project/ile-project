@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ListingsPage page.
+ * Generated class for the StudentsignupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-listings',
-  templateUrl: 'listings.html',
+  selector: 'page-studentsignup',
+  templateUrl: 'studentsignup.html',
 })
-export class ListingsPage {
+export class StudentsignupPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListingsPage');
+    console.log('ionViewDidLoad StudentsignupPage');
   }
-  swipe(event){
-    if(event.direction === 2){
-      this.navCtrl.parent.select(0);
-    }
 
-  }
 }
